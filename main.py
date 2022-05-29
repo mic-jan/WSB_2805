@@ -1,4 +1,5 @@
 import EURO_ZLOTY_EURO
+import Obliczanie_podatku_do_zaplaty
 import potencjalny_zysk
 # import Obliczanie_podatku_do_zaplaty
 import zdolnosc_kredytowa
@@ -55,7 +56,8 @@ if __name__ == "__main__":
         elif (key == "3"):
             pass
         elif (key == "4"):
-            pass
+            Obliczanie_podatku_do_zaplaty.Podatek()
+            trwac=mirek.zakonczyc()
         elif (key == "5"):
             mirek.oblicz_potencjalny_zysk()
             trwac=mirek.zakonczyc()
