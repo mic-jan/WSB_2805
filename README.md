@@ -11,6 +11,9 @@ Finalny program powinien pytać użytkownika o:
 - wiek
 - płeć
 - miesięczne zarobki
-- posiadane oszczędności
+- posiadane oszczędności (wkład na lokatę)
+- procent lokaty
+- długość lokaty
 - puls
 - temperaturę
+- nałogi
