@@ -7,7 +7,7 @@ def potencjalny_zysk(wklad,procent,czas):
     podatek = odsetki * 0.19
     zysk = round((odsetki - podatek), 2)
 
-    return int(zysk)
+    return zysk
 
 
 if __name__== "__main__":
