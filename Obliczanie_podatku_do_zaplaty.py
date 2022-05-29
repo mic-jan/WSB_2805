@@ -12,4 +12,5 @@ def Podatek():
     podatek = round(podatek, 0)
     return podatek
 
-print("Podatek wynosi:", Podatek() )
+if __name__ == "__main__":
+    print("Podatek wynosi:", Podatek() )
