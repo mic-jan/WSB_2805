@@ -3,7 +3,7 @@
 
 def potencjalny_zysk(wklad,procent,czas):
     # print("Witaj w programie obliczającym zysk z lokaty bankowej netto. \n")
-    odsetki = (wklad * (procent/100) * czas)/360
+    odsetki = (wklad * (procent/100) * czas)/365
     podatek = odsetki * 0.19
     zysk = round((odsetki - podatek), 2)
 
