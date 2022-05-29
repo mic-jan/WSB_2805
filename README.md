@@ -6,3 +6,11 @@
 4. Obliczanie podatku do zapłaty -> Marcin
 5. Obliczenie potencjalnego zysku -> Łukasz
 6. Finalny program -> Robert
+
+Finalny program powinien pytać użytkownika o:
+- wiek
+- płeć
+- miesięczne zarobki
+- posiadane oszczędności
+- puls
+- temperaturę
