@@ -1,6 +1,6 @@
 #Klient jest zdrowy kiedy:
 #puls jest od 60 do 100 uderzen na min
-#temperatura = 36,6
+#temperatura = 36.6
 #nalogi = NIE
 
 puls =float(input("Wprowadź puls: "))
