@@ -1,4 +1,4 @@
-from euro_zloty import przeliczWaluty
+# import euro_zloty
 import potencjalny_zysk
 import Obliczanie_podatku_do_zaplaty
 import zdolnosc_kredytowa
@@ -25,7 +25,7 @@ if __name__ == "__main__":
         if(key == "0"):
             break
         elif (key == "1"):
-            przeliczWaluty()
+            euro_zloty.przeliczWaluty()
         elif(key == "2"):
             pass
         elif(key == "3"):
