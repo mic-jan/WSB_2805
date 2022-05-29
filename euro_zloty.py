@@ -4,7 +4,7 @@ def przeliczWaluty():
     ilosc = input("Podaj ilość PLN do przeliczenia na " + podajWalute + "\n")
 
     # program przelicza PLN na euro
-    if podajWalute == "PLN" or podajWalute == "PLN":
+    if podajWalute == "PLN":
         wynik = int(ilosc) * 4.57
         print('%0.2f' % wynik)
     else:
