@@ -14,6 +14,11 @@ class Osoba:
         czas = int(input("Jak dlugo [ilosc dni]: "))
         self.zysk = potencjalny_zysk.potencjalny_zysk(wklad, procent, czas)
         print("Potencjalny zysk: ", self.zysk, " PLN")
+    def oblicz_zdolnosc_kredytowa(self):
+        wiek = int(input("Podaj wiek: "))
+        plec = input("Podaj plec (M/K): ")
+        zarobki = int(input("Podaj miesieczne zarobki: "))
+        print("Twoja zdolnosc kredytowa wynosi: " + str((zdolnosc_kredytowa.zdolnosc_kredytowa(wiek, plec, zarobki))) + " PLN")
     def zakonczyc(self):
         zakonczyc = input("zakonczyc? y or n: ")
         if zakonczyc == "y":
@@ -45,7 +50,8 @@ if __name__ == "__main__":
             mirek.przelicz()
             trwac=mirek.zakonczyc()
         elif (key == "2"):
-            pass
+            mirek.oblicz_zdolnosc_kredytowa()
+            trwac=mirek.zakonczyc()
         elif (key == "3"):
             pass
         elif (key == "4"):

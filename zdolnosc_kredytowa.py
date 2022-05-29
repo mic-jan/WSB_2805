@@ -7,9 +7,8 @@ def zdolnosc_kredytowa(wiek, plec, zarobki):
         return 0
     return int(zdolnosc)
 
-if __name__== "__main__":
-    wiek = int(input("Podaj wiek: "))
-    plec = input("Podaj plec (M/K): ")
-    zarobki = int(input("Podaj miesieczne zarobki: "))
-    print("Twoja zdolnosc kredytowa wynosi: " + str((zdolnosc_kredytowa(wiek, plec, zarobki))) + " PLN")
-
+# if __name__== "__main__":
+#     wiek = int(input("Podaj wiek: "))
+#     plec = input("Podaj plec (M/K): ")
+#     zarobki = int(input("Podaj miesieczne zarobki: "))
+#     print("Twoja zdolnosc kredytowa wynosi: " + str((zdolnosc_kredytowa(wiek, plec, zarobki))) + " PLN")
