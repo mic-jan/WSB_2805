@@ -11,5 +11,5 @@ def potencjalny_zysk():
     zysk = round(odsetki - podatek)
 
     return zysk
-
+#potrzebne na potrzeby testowania programu :)
 print(potencjalny_zysk())
