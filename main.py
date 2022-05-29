@@ -1,4 +1,4 @@
-import euro_zloty
+import EURO_ZLOTY_EURO
 import potencjalny_zysk
 # import Obliczanie_podatku_do_zaplaty
 import zdolnosc_kredytowa
@@ -20,7 +20,11 @@ class Osoba:
             return False
         else:
             return True
-
+    def przelicz(self):
+        self.kwota = int(input("Podaj kwote do przeliczenia: "))
+        self.przelicznik = str(input("Podaj EUR/PLN lub PLN/EUR: "))
+        self.kantor_wynik = EURO_ZLOTY_EURO.rodzaj_waluty(self.kwota,self.przelicznik)
+        print("Przeliczono ", self.kwota," ",self.przelicznik[:3]," na ", self.przelicznik[4:],"\nWynik: ",self.kantor_wynik," ",self.przelicznik[4:])
 if __name__ == "__main__":
     trwac = True
     mirek=Osoba()
@@ -38,7 +42,8 @@ if __name__ == "__main__":
         if (key == "0"):
             break
         elif (key == "1"):
-            pass
+            mirek.przelicz()
+            trwac=mirek.zakonczyc()
         elif (key == "2"):
             pass
         elif (key == "3"):
