@@ -2,7 +2,7 @@ import euro_zloty
 import potencjalny_zysk
 # import Obliczanie_podatku_do_zaplaty
 import zdolnosc_kredytowa
-import zdrowie
+# import zdrowie
 import os
 
 class Osoba:
