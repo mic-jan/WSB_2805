@@ -6,6 +6,9 @@ import zdolnosc_kredytowa
 # import zdrowie
 import os
 
+import zdrowie
+
+
 class Osoba:
     def __init__(self):
         pass
@@ -31,6 +34,11 @@ class Osoba:
         self.przelicznik = str(input("Podaj EUR/PLN lub PLN/EUR: "))
         self.kantor_wynik = EURO_ZLOTY_EURO.rodzaj_waluty(self.kwota,self.przelicznik)
         print("Przeliczono ", self.kwota," ",self.przelicznik[:3]," na ", self.przelicznik[4:],"\nWynik: ",self.kantor_wynik," ",self.przelicznik[4:])
+    def jak_tam_twoje_zdrowie(self):
+        self.puls = float(input("Wprowadź puls: "))
+        self.temperatura = float(input("Wprowadź temperature: "))
+        self.nalogi = str(input("Wprowadź TAK/NIE: "))
+        print(zdrowie.sprawdzenie_zdrowia())
 if __name__ == "__main__":
     trwac = True
     mirek=Osoba()
@@ -54,7 +62,8 @@ if __name__ == "__main__":
             mirek.oblicz_zdolnosc_kredytowa()
             trwac=mirek.zakonczyc()
         elif (key == "3"):
-            pass
+            mirek.jak_tam_twoje_zdrowie()
+            trwac=mirek.zakonczyc()
         elif (key == "4"):
             Obliczanie_podatku_do_zaplaty.Podatek()
             trwac=mirek.zakonczyc()
