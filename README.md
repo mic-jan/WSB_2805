@@ -3,6 +3,6 @@
 1. Przeliczanie złotówek -> Inga
 2. Wyliczanie zdolności kredytowej -> Michał
 3. Sprawdzanie zdrowia -> Justyna
-4. Obliczanie podatku -> Marcin
-5. Obliczenie podatku do zapłaty -> Łukasz
+4. Obliczanie podatku do zapłaty -> Marcin
+5. Obliczenie potencjalnego zysku -> Łukasz
 6. Finalny program -> Robert
