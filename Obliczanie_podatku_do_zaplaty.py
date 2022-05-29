@@ -1,7 +1,11 @@
-def dochod(wprowadz_roczny_dochod):
+dochód = float(input("Wprowadź roczny dochód: "))
 
-if dochod < 100000:
-    podatek = (dochod * 0.18) - 556
+if dochód < 85528:
+    podatek = (dochód * 0.18) - 556
+else:
+    podatek = ((dochód - 85528) * 0.32) + 14839
 
+if podatek < 0: podatek = 0
 
-return podatek
+podatek = round(podatek, 0)
+print("Podatek wynosi:", podatek)
