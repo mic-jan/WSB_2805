@@ -3,9 +3,7 @@
 #temperatura = 36.6
 #nalogi = NIE
 
-puls =float(input("Wprowadź puls: "))
-temperatura =float(input("Wprowadź temperature: "))
-nalogi =str(input("Wprowadź TAK/NIE: "))
+
 
 def sprawdzenie_zdrowia (puls, temperatura, nalogi):
     if (puls <=100 and puls >=60 and temperatura == 36.6 and nalogi == "NIE"):
@@ -13,5 +11,8 @@ def sprawdzenie_zdrowia (puls, temperatura, nalogi):
     else: print ("Jest chory")
 
 if __name__ == "__main__":
+    puls = float(input("Wprowadź puls: "))
+    temperatura = float(input("Wprowadź temperature: "))
+    nalogi = str(input("Wprowadź TAK/NIE: "))
     print ("Czy klient jest zdrowy?")
     sprawdzenie_zdrowia(puls, temperatura, nalogi)
