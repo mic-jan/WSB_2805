@@ -7,16 +7,23 @@ import os
 
 class Osoba:
     def __init__(self):
-        self.wiek = input("Podaj swoj wiek ")
-        self.plec = input("Podaj plec ")
-        self.pensja = input("Podaj miesieczne zarobki ")
-        self.oszczednosci = input("Podaj posiadane oszczednosci ")
-        self.puls = input("Podaj swoj puls ")
-        self.temperatura = input("Podaj temperature swojego ciala ")
-
+        pass
+    def oblicz_potencjalny_zysk(self):
+        wklad = int(input("Podaj wklad wlasny [PLN]: "))
+        procent = int(input("Podaj oprocentowanie lokaty [%]: "))
+        czas = int(input("Jak dlugo [ilosc dni]: "))
+        self.zysk = potencjalny_zysk.potencjalny_zysk(wklad, procent, czas)
+        print("Potencjalny zysk: ", self.zysk, " PLN")
+    def zakonczyc(self):
+        zakonczyc = input("zakonczyc? y or n: ")
+        if zakonczyc == "y":
+            return False
+        else:
+            return True
 
 if __name__ == "__main__":
     trwac = True
+    mirek=Osoba()
     while trwac:
         os.system("clear")
 
@@ -31,7 +38,7 @@ if __name__ == "__main__":
         if (key == "0"):
             break
         elif (key == "1"):
-
+            pass
         elif (key == "2"):
             pass
         elif (key == "3"):
@@ -39,12 +46,7 @@ if __name__ == "__main__":
         elif (key == "4"):
             pass
         elif (key == "5"):
-            wklad = int(input("Podaj wklad wlasny: "))
-            procent = int(input("Podaj oprocentowanie lokaty: "))
-            czas = int(input("Na jak dlugo (w dniach): "))
-            print("Potencjalny zysk: ",potencjalny_zysk.potencjalny_zysk(wklad,procent,czas)," PLN")
-            zakonczyc = input("zakonczyc? y or n: ")
-            if zakonczyc == "y":
-                trwac = False
+            mirek.oblicz_potencjalny_zysk()
+            trwac=mirek.zakonczyc()
         else:
             print("Wybierz poprawnie od 0 do 5.")

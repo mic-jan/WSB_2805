@@ -12,5 +12,6 @@ def sprawdzenie_zdrowia (puls, temperatura, nalogi):
         print ("Jest zdrowy")
     else: print ("Jest chory")
 
-print ("Czy klient jest zdrowy?")
-sprawdzenie_zdrowia(puls, temperatura, nalogi)
+if __name__ == "__main__":
+    print ("Czy klient jest zdrowy?")
+    sprawdzenie_zdrowia(puls, temperatura, nalogi)
