@@ -38,7 +38,7 @@ class Osoba:
         self.puls = float(input("Wprowadź puls: "))
         self.temperatura = float(input("Wprowadź temperature: "))
         self.nalogi = str(input("Wprowadź TAK/NIE: "))
-        (zdrowie.sprawdzenie_zdrowia()
+        zdrowie.sprawdzenie_zdrowia(self.puls,self.temperatura,self.nalogi)
 if __name__ == "__main__":
     trwac = True
     mirek=Osoba()
